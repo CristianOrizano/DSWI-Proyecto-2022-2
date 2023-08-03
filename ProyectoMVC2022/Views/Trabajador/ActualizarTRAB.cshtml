@@ -1,0 +1,87 @@
+﻿@model ProyectoMVC2022.Models.Trabajador
+
+@{
+    ViewData["Title"] = "ActualizarTRAB";
+    Layout = "~/Views/Shared/_CrudTrabajador.cshtml";
+}
+
+<style>
+    form {
+               background: #c31432; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #240b36, #c31432); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 
+        10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    label {
+        color: white;
+    }
+
+</style>
+<hr />
+
+
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-12 col-md-10 col-lg-11 " style="background: #F7BE81;padding: 10px;">
+        <form asp-action="ActualizarTRAB" style="padding: 15px;">
+            <h2 class="text-center" style="color:#4ED5FD ">Mantenimiento Trabajadores</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="codtra" class="control-label"></label>
+                    <input asp-for="codtra" class="form-control" readonly />
+                    <span asp-validation-for="codtra" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="nombre" class="control-label"></label>
+                    <input asp-for="nombre" class="form-control" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="apellido" class="control-label"></label>
+                    <input asp-for="apellido" class="form-control" />
+                    <span asp-validation-for="apellido" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="direccion" class="control-label"></label>
+                    <input asp-for="direccion" class="form-control" />
+                    <span asp-validation-for="direccion" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="fecha" class="control-label"></label>
+                    <input asp-for="fecha" class="form-control" />
+                    <span asp-validation-for="fecha" class="text-danger"></span>
+                </div>
+
+            </div>
+            <br />
+
+            <a asp-action="CreateTrabaj" asp-route-id="0" class="btn btn-secondary">Nuevo</a>
+            <input type="submit" value="Actualizar" class="btn btn-warning" />
+        </form>
+    </div>
+</div>
+
+@if (ViewBag.mensaje != null)
+{
+    <script>
+        window.swal("Correcto!", "@ViewBag.mensaje", "success");
+
+    </script>
+}
+else
+{
+
+}
+
+<!--la vista parcial-->
+<div>
+    @Html.Partial("_PartialTrab", ViewBag.cliente as IEnumerable<ProyectoMVC2022.Models.Trabajador>)
+</div>
+
+

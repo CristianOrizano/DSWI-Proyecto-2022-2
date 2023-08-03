@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "inicio";
+    Layout = "~/Views/Shared/_inicio.cshtml";
+}
+
+@if (ViewBag.mensaje != null)
+{
+    <script>
+        window.swal("Bienvenido!", "@ViewBag.mensaje", "success");
+
+    </script>
+}
+
+

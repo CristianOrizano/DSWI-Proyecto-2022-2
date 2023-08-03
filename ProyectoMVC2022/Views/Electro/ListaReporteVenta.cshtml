@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Reporte>
+
+@{
+    ViewData["Title"] = "ListaReporteVenta";
+    Layout = "~/Views/Shared/_Reporte.cshtml";
+}
+
+<style>
+    h5{
+        color:white;
+    }
+
+</style>
+
+
+<h1 style="text-align:center;color:White;background:black;padding:5px;margin-top:10px;padding:8px;border:solid white">Reportes de Ventas</h1>
+
+
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3 g-4 mt-5">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card ">       
+                <div class="card-body bg-dark">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td> <h5 style="color:#39F0EA">NumBoleta:</h5> </td>
+                                <td> <h5>@Html.DisplayFor(modelItem => item.numbol)</h5> </td>
+                            </tr>
+                              <tr>
+                                <td> <h5 style ="color:#39F0EA">Fecha:</h5> </td>
+                                <td> <h5>@Html.DisplayFor(modelItem => item.fecha)</h5> </td>
+                                
+                            </tr>
+                              <tr>
+
+                                <td> <h5 style ="color:#39F0EA">Nombre Vendedor:</h5> </td>
+                                <td> <h5>@Html.DisplayFor(modelItem => item.tranom)</h5> </td>
+                               
+                            </tr>
+                              <tr>
+                                <td> <h5 style="color:#39F0EA">Nombre Cliente:</h5> </td>
+                                <td> <h5> @Html.DisplayFor(modelItem => item.clinom)</h5> </td>
+                            </tr>
+                            <tr>
+                                <td> <h5 style ="color:#39F0EA">Total:</h5> </td>
+                                <td> <h5>S/.@Html.DisplayFor(modelItem => item.total)</h5> </td>
+                            </tr>
+
+                        </thead>
+                       
+                    </table>
+                    <br>
+                  
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+
+
+
+

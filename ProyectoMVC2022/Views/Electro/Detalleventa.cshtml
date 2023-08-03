@@ -1,0 +1,61 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Electrodomestico>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalleventa</title>
+</head>
+<body>
+
+<table class="table ">
+    <thead>
+            <tr class="table table-dark">
+            <th>
+                
+            </th>
+       
+            <th>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precio)
+            </th>
+          
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+                <tr class="table table-light">
+            <td>
+                        <img src="~/imagen/producto/@Html.DisplayFor(modelItem => item.codigo) .PNG"
+                         class="card-img-top" width="70px"
+                         height="70px" onerror="this.src='/imagen/producto/elec.jpg'" />
+            </td>
+         
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stock)
+            </td>
+            <td>
+               S/@Html.DisplayFor(modelItem => item.precio)
+            </td>
+           
+        
+         
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

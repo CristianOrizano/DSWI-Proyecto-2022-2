@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Electrodomestico>
+
+
+<div class="container" >
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="background: #2F58BC">
+        <div style="padding: 10px">
+                <table class="table table-dark table-striped  table-hover" id="myTable" style="background: white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.stock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.marca)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.nombrecate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigo)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.stock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.marca)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.nombrecate)
+            </td>
+            <td>
+                 @Html.ActionLink("Editar", "ActualizarEle", new {id=item.codigo},new { @class = "btn btn-success" })
+                 @Html.ActionLink("Eliminar", "EliminarElec",new {id=item.codigo},new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+</div>
+
+                

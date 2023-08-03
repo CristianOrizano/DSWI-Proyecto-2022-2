@@ -1,0 +1,66 @@
+﻿@model ProyectoMVC2022.Models.Electrodomestico
+
+@{
+    ViewData["Title"] = "seleccionarDeta";
+    Layout = "~/Views/Shared/_DetalleSelec.cshtml";
+}
+
+
+<div class="container  ">
+    <div class="row justify-content-center" style="margin-top: 10%">
+        <div class="col-sm-12 col-md-11 col-lg-11 col-xl-7"
+             style="background: white; border: solid; box-shadow: yellow 10px 5px 35px;">
+            <h2 style="text-align: center; color: #FE2E64">Detalle compra</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="~/imagen/producto/@Html.DisplayFor(model => model.codigo) .PNG"
+                             class="card-img-top" onerror="this.src='/imagen/producto/elec.jpg'" />
+                    </td>
+                    <td style="padding: 30px">
+                        <h4 style="color: #045FB4;"> @Model.nombrecate</h4>
+                        <hr>
+                        <h2 style="color: green">@Model.descripcion</h2>
+                        <form action="seleccionarDeta" method="post">
+                            <!--  Html.Hidden("idproducto",Model.codigo) -->
+                            <input name="idproducto" value=@Model.codigo hidden />
+                            <table>
+                                <tr>
+                                    <td><h5>Marca :</h5></td>
+                                    <td><h3 style="color: #585858">@Html.DisplayFor(model => model.marca)</h3></td>
+                                </tr>
+                                <tr>
+                                    <td><h5>Precio:</h5></td>
+                                    <td>
+                                        <h2 style="color: #FF8000">
+                                            S/.@Html.DisplayFor(model => model.precio)
+                                        </h2>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td><h5>Cantidad:</h5></td>
+                                  <!-- <td>Html.TextBox("cantidad",1,new{type="number",min=1, max=Model.stock})</td> -->
+                                    <td><input type="number" value="1" name="cantidad" min="1" max=@Model.stock /></td>
+                                </tr>
+                            </table>
+                            <hr>
+
+                            <div class="text-center">
+                                <button class="btn btn-primary " name="btnMugi" value="Agregar">
+                                    Agregar compra
+                                </button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

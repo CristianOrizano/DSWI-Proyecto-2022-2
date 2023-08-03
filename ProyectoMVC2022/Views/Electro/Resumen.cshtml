@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Carro>
+
+
+
+<div class="container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="background: #1E86C9;border:solid 5px white ">
+            <div style="padding: 10px">
+                <table class="table table-dark table-striped  table-hover" id="myTable" style="background: white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.idproducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.monto)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                 <img src="~/imagen/producto/@Html.DisplayFor(modelItem => item.idproducto) .PNG"
+                                     class="card-img-top" onerror="this.src='imagen/producto/elec.jpg'" width="110px"
+                                     height="110px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monto)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "Delete",new {id=item.idproducto,q =item.cantidad},new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+        
+    </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+</div>

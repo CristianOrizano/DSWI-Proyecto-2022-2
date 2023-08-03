@@ -1,0 +1,64 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Cliente>
+
+<div class="container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-sm-12 col-md-12 col-lg-12" style="background: #2FABBC">
+            <div style="padding: 10px">
+                <table class="table table-dark table-striped  table-hover" id="myTable" style="background: white">
+                    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.codigo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fecha)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.codigo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fecha)
+            </td>
+            <td>
+                   @Html.ActionLink("Editar", "ActualizarEle", new {cod=item.codigo},new { @class = "btn btn-info" })                      
+                   @Html.ActionLink("Eliminar", "EliminarCli",new {id=item.codigo},new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+            </div>
+        </div>
+    </div>
+</div>

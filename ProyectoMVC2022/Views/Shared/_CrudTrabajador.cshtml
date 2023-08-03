@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+    <!-- CSS del DataTable -->
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>@ViewBag.Title</title>
+
+     <style>
+        .en1 {
+            width: 350px;
+            height: 600px;
+            display: inline-block;
+            margin: 30px;
+        }
+
+        .en2 {
+            width: 350px;
+            height: 600px;
+            display: inline-block;
+        }
+
+        .en3 {
+            width: 350px;
+            height: 600px;
+            display: inline-block;
+            margin: 30px;
+        }
+
+        .ce {
+            text-align: center;
+            background: #088A85;
+            color: white;
+            padding: 15px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .p {
+            margin: 8px;
+            text-align: left;
+        }
+
+        .sub {
+            text-decoration: none;
+            font-size: 25px;
+            color: red;
+        }
+
+        .li {
+            text-decoration: none;
+            color: white;
+            background: black;
+            padding: 5px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .lis {
+            background: yellow;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            font-size: 17px;
+            border: solid;
+        }
+
+        .con2 {
+            background: pink;
+            width: 255px;
+            float: left;
+        }
+
+        .modal-header {
+            color: #fff;
+            background: #428bca;
+            display: flex;
+            justify-content: center;
+        }
+
+        .help-block {
+            color: red;
+        }
+
+        .form-group.has-error .form-control-label {
+            color: red;
+        }
+
+        .form-group.has-error .form-control {
+            border: 1px solid red;
+            box-shadow: 0 0 0 0.2rem rgba(250, 16, 0, 0.18);
+        }
+
+        .alertify .ajs-dialog {
+            top: 50%;
+            transform: translateY(-50%);
+            margin: auto;
+        }
+
+        .ajs-header {
+            background-color: #286090 !important;
+            color: white !important;
+            /*text-align: center;*/
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .ajs-ok {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .ajs-cancel {
+            color: #fff;
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+        .form-control {
+            font-size: 15px;
+        }
+
+        .form-select {
+            font-size: 15px;
+        }
+
+        .img2 {
+            height: 280px;
+            margin-left: 50px;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+
+        .a {
+            float: left;
+            background: #E93737;
+            padding: 5px;
+            height: 48px;
+            width: 550px;
+            color: #20C9EB;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Fjalla One', sans-serif;
+            border: solid white;
+        }
+
+        .usu {
+            float: right;
+            height: 75px;
+            width: 650px;
+            padding: 10px;
+        }
+
+        .b {
+            background: #1E89D3;
+            float: left;
+            border-radius: 10px;
+        }
+
+
+        .strongnav {
+            font-size: 25px;
+            color: white;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        body {
+background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
+        }
+
+
+          
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark" aria-label="Dark offcanvas navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CYBER ELECTRONIC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Barra de Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active"  aria-current="page"
+                               href="@Url.Action("inicio", "Inicio")">Inicio</a>
+                        </li>
+                 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" style="background:red"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mantenimiento
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="@Url.Action("Create", "Electro")">Electrodomesticos</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("CreateCliente", "Cliente")">Clientes</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("CreateTrabaj", "Trabajador")">Trabajadores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("CatalogoElec", "Electro")">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Comprar", "Electro")">Carro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("ListaReporteVenta", "Electro")">Reporte</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("LoginCierra", "Trabajador")">Cerrar sesion</a>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+   
+   
+    <div class="container">
+    <div>
+        @RenderBody()
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <!-- js de DataTable -->
+    <script src="https:cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+
+
+    
+</body>
+
+</html>

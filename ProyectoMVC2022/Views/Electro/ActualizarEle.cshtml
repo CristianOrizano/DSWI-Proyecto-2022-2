@@ -1,0 +1,88 @@
+﻿@model ProyectoMVC2022.Models.Electrodomestico
+
+@{
+    ViewData["Title"] = "ActualizarEle";
+    Layout = "~/Views/Shared/_CrudELec.cshtml";
+}
+
+
+<style>
+    form {
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    label {
+        color: white;
+    }
+
+</style>
+
+<hr />
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-12 col-md-10 col-lg-11 " style="background: #F7BE81;padding: 10px;">
+        <form asp-action="ActualizarEle" style="padding: 15px;">
+            <h2 class="text-center" style="color:#4ED5FD ">Mantenimiento Electrodomesticos</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="codigo" class="control-label"></label>
+                    <input asp-for="codigo" class="form-control" readonly />
+                    <span asp-validation-for="codigo" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="ide_cate" class="control-label"></label>
+                    <select asp-for="ide_cate" asp-items="@ViewBag.categorias"  class="form-select"></select>
+                    <span asp-validation-for="ide_cate" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="descripcion" class="control-label"></label>
+                    <input asp-for="descripcion" class="form-control" />
+                    <span asp-validation-for="descripcion" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="stock" class="control-label"></label>
+                    <input asp-for="stock" class="form-control" />
+                    <span asp-validation-for="stock" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="precio" class="control-label"></label>
+                    <input asp-for="precio" class="form-control" />
+                    <span asp-validation-for="precio" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="marca" class="control-label"></label>
+                    <input asp-for="marca" class="form-control" />
+                    <span asp-validation-for="marca" class="text-danger"></span>
+                </div>
+               
+            </div>
+            <br />
+           
+            <div class="form-group">
+                <a asp-action="Create" class="btn btn-secondary">Nuevo</a>
+                <input type="submit" value="Actualizar" class="btn btn-warning" />
+            </div>
+            
+        </form>
+    </div>
+   
+</div>
+    @if (ViewBag.mens !=null){
+    <script>
+        window.swal("Correcto!", "@ViewBag.mens", "success");
+
+    </script>
+    }else{
+        
+    }
+   
+<!--la vista parcial-->
+<div>
+    @Html.Partial("_PartialEle", ViewBag.electro as IEnumerable<ProyectoMVC2022.Models.Electrodomestico>)
+</div>
+

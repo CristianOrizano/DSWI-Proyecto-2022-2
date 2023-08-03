@@ -1,0 +1,90 @@
+﻿@model ProyectoMVC2022.Models.Cliente
+
+@{
+    ViewData["Title"] = "EliminarCli";
+    Layout = "~/Views/Shared/_CrudCliente.cshtml";
+}
+
+<style>
+    form {
+        background: #000000; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    label {
+        color: white;
+    }
+
+</style>
+<hr />
+<div class="row justify-content-center mt-3">
+    <div class="col-sm-12 col-md-10 col-lg-11 " style="background: #F7BE81;padding: 10px;">
+        <form asp-action="EliminarCli" style="padding: 15px;">
+            <h2 class="text-center" style="color:#FF610D ">Mantenimiento Clientes</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="codigo" class="control-label"></label>
+                    <input asp-for="codigo" class="form-control" readonly />
+                    <span asp-validation-for="codigo" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="nombre" class="control-label"></label>
+                    <input asp-for="nombre" class="form-control" />
+                    <span asp-validation-for="nombre" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="apellido" class="control-label"></label>
+                    <input asp-for="apellido" class="form-control" />
+                    <span asp-validation-for="apellido" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label asp-for="dni" class="control-label"></label>
+                    <input asp-for="dni" class="form-control" />
+                    <span asp-validation-for="dni" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="sexo" class="control-label"></label>
+                    <input asp-for="sexo" class="form-control" />
+                    <span asp-validation-for="sexo" class="text-danger"></span>
+                </div>
+                <div class="col-md-4">
+                    <label asp-for="fecha" class="control-label"></label>
+                    <input asp-for="fecha" class="form-control" />
+                    <span asp-validation-for="fecha" class="text-danger"></span>
+                </div>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <a asp-action="CreateCliente" class="btn btn-secondary">Nuevo</a>
+                <input type="submit" value="Eliminar" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (ViewBag.mens != null)
+{
+    <script>
+        window.swal("Correcto!", "@ViewBag.mens", "success");
+
+    </script>
+}
+else
+{
+
+}
+
+<!--la vista parcial-->
+<div>
+    @Html.Partial("_PartialClie", ViewBag.cliente as IEnumerable<ProyectoMVC2022.Models.Cliente>)
+</div>
+
+

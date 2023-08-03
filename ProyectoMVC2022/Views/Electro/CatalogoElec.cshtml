@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ProyectoMVC2022.Models.Electrodomestico>
+
+@{
+    ViewData["Title"] = "CatalogoElec";
+    Layout = "~/Views/Shared/_Catalogo.cshtml";
+}
+
+
+
+<div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 mt-5">
+    @foreach (var item in Model) {
+        <div class="col">
+				<div class="card ">
+               
+                <img src="~/imagen/producto/@Html.DisplayFor(modelItem => item.codigo) .PNG"
+                 class="card-img-top" onerror="this.src='/imagen/producto/elec.jpg'" />
+                <div class="card-body bg-dark">
+
+                    <h5 class="card-title text-center text-white"> @Html.DisplayFor(modelItem => item.descripcion)</h5>
+                    <h5 class="card-text text-center text-white"> S/. @Html.DisplayFor(modelItem => item.precio) </h5>
+                    <h5 class="card-text text-center text-white">   @Html.DisplayFor(modelItem => item.marca) </h5>
+                    <br>
+                    <div class="text-center">
+                        
+                        @Html.ActionLink("Agregar", "seleccionarDeta", new { id=item.codigo},new { @class = "btn btn-success" })
+                    </div>
+
+
+                </div>
+        </div>
+			</div>
+}
+</div>
+
+  
+

@@ -1,0 +1,119 @@
+﻿@model ProyectoMVC2022.Models.Electrodomestico
+
+@{
+    ViewData["Title"] = "ReporteGene";
+    Layout = "~/Views/Shared/_ReporteGen.cshtml";
+}
+<style>
+    h3{
+        color: #47DFE9;
+    }
+    h5{
+        color: #F13558;
+    }
+    .mu{
+        color:black;
+    }
+</style>
+
+
+<div class="container" style="margin-top:30px">
+    <div class="row justify-content-center" >
+
+        <div class="col-sm-12 col-md-8 col-lg-8" style="background:#5D6D7E;border:#F5CBA7 solid 8px;box-shadow:12px 10px 10px 10px#1C2833">
+            <h1 style="text-align:center;color:White;background:black;padding:5px">CYBER ELECTRONIC</h1>
+            <br />
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-10" >
+                    <table class="table" style="background:#FDFEFE;border:solid 4px">
+                        <h3>Vendedor</h3>
+                        <tr>
+                            <td><h5>Nombre:</h5></td>
+                          
+                            <td><h5 class="mu"> @ViewBag.nomtra </h5></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Apellido:</h5></td>
+                           
+                            <td><h5 class="mu">@ViewBag.apetra</h5></td>
+
+                        </tr>                   
+                    </table>
+
+                </div>
+
+            </div>
+          
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-10" >
+                    <table class="table" style="background:#FDFEFE;border:solid 4px">
+                        <h3>Cliente</h3>
+                        <tr>
+                            <td><h5>DNI:</h5></td>
+
+                            <td><h5 class="mu">@ViewBag.dnicli</h5></td>
+
+                        </tr>
+                        <tr>
+                            <td><h5>Nombre:</h5></td>
+
+                            <td><h5 class="mu">@ViewBag.nomcli</h5></td>
+                        </tr>
+                        <tr>
+                            <td><h5>Apellido:</h5></td>
+
+                            <td><h5 class="mu"> @ViewBag.apecli</h5></td>
+
+                        </tr>
+                      
+                    </table>
+
+                </div>
+
+            </div>
+          
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-10 col-lg-10" >
+                    <table class="table" style="background:#FDFEFE;border:solid 4px">
+                        <h3>Importe total</h3>
+                        <tr>
+                            <td><h5>Monto pagado:</h5></td>
+                            <td><h5 style="color:black">S/. @ViewBag.total</h5></td>
+                        </tr>
+
+                    </table>
+                </div>
+                @Html.Partial("Detalleventa",ViewBag.deta as IEnumerable<ProyectoMVC2022.Models.Electrodomestico>)
+            </div>
+            <div>
+              
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@if (ViewBag.mensaje != null)
+{
+    <script>
+        window.swal("Correcto!", "@ViewBag.mensaje", "success");
+
+    </script>
+}
+else
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

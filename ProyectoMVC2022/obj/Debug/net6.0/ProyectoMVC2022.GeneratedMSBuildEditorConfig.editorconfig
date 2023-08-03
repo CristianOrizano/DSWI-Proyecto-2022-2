@@ -1,0 +1,169 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoMVC2022
+build_property.RootNamespace = ProyectoMVC2022
+build_property.ProjectDir = D:\ZTODOSLOSCICLOS\5QUINTO_CICLO_5\Desarrollo_SERVICIOS_WEB1\ProyectoSer-2022\ProyectoMVC2022\ProyectoMVC2022\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ZTODOSLOSCICLOS\5QUINTO_CICLO_5\Desarrollo_SERVICIOS_WEB1\ProyectoSer-2022\ProyectoMVC2022\ProyectoMVC2022
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Cliente/ActualizarEle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxBY3R1YWxpemFyRWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Cliente/CreateCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhdGVDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Cliente/EliminarCli.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxFbGltaW5hckNsaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Cliente/_PartialClie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfUGFydGlhbENsaWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/ActualizarEle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xBY3R1YWxpemFyRWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/CatalogoElec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xDYXRhbG9nb0VsZWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/Comprar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xDb21wcmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/Detalleventa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xEZXRhbGxldmVudGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/EliminarElec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xFbGltaW5hckVsZWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/ListaClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xMaXN0YUNsaWVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/ListaReporteVenta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xMaXN0YVJlcG9ydGVWZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/ReporteGene.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xSZXBvcnRlR2VuZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/Resumen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xSZXN1bWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/seleccionarDeta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xzZWxlY2Npb25hckRldGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Electro/_PartialEle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWxlY3Ryb1xfUGFydGlhbEVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Inicio/inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5pY2lvXGluaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_Catalogo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXRhbG9nby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_CrudCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DcnVkQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_CrudELec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DcnVkRUxlYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_CrudTrabajador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DcnVkVHJhYmFqYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_DetalleSelec.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EZXRhbGxlU2VsZWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9pbmljaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_Reporte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXBvcnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_ReporteGen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXBvcnRlR2VuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_Venta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WZW50YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Trabajador/ActualizarTRAB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxBY3R1YWxpemFyVFJBQi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Trabajador/CreateTrabaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxDcmVhdGVUcmFiYWouY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Trabajador/EliminarTRA.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxFbGltaW5hclRSQS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Trabajador/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Trabajador/_PartialTrab.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxfUGFydGlhbFRyYWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ZTODOSLOSCICLOS/5QUINTO_CICLO_5/Desarrollo_SERVICIOS_WEB1/ProyectoSer-2022/ProyectoMVC2022/ProyectoMVC2022/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1w1i7ywfvq

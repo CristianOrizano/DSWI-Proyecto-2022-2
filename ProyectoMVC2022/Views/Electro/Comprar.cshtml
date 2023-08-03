@@ -1,0 +1,178 @@
+﻿@model ProyectoMVC2022.Models.Cliente
+
+@{
+    ViewData["Title"] = "Comprar";
+    Layout = "~/Views/Shared/_Venta.cshtml";
+}
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-11"> 
+<h1 style="text-align:center;color:white;background:#212F3D;margin-top:10px;padding:8px;border:solid white">Compra de Electrodomesticos</h1>
+       
+    </div>
+ </div>
+
+<style>
+    label{
+        color:white;
+        font-size:20px;
+    }
+
+    form {
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .nini{
+         background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    th{
+        color:white;
+    }
+
+    .form-control{
+        background: black;
+        color: white;
+        
+    }
+</style>
+
+<div class="container" >
+    <div class="row justify-content-evenly  mt-2">
+        
+        <div class="nini col-sm-12 col-md-12 col-lg-7 col-xl-7" style="padding:15px;border:solid 12px #F7BE81">
+           
+             <form asp-action="Comprar">
+                
+                <div class="row g-3">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <h1 style="color: WHite">Datos del Cliente</h1>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        @Html.ActionLink("Buscar","ListaClientes", new {/* id=item.PrimaryKey */ },
+                        new { @class = "btn btn-warning" })
+                    </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                            <label asp-for="codigo" class="form-label"></label>
+                            <input asp-for="codigo" class="form-control" readonly />
+                        <span asp-validation-for="codigo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                            <label asp-for="nombre" class="form-label"></label>
+                            <input asp-for="nombre" class="form-control" readonly />
+                        <span asp-validation-for="nombre" class="text-danger"></span>
+                    </div>
+                </div>
+                   
+                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                            <label asp-for="apellido" class="form-label"></label>
+                            <input asp-for="apellido" class="form-control" readonly />
+                        <span asp-validation-for="apellido" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                            <label asp-for="dni" class="form-label"></label>
+                            <input asp-for="dni" class="form-control" readonly />
+                        <span asp-validation-for="dni" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="form-group">
+                            <label asp-for="sexo" class="form-label"></label>
+                            <input asp-for="sexo" class="form-control" readonly />
+                        <span asp-validation-for="sexo" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                    <div class="form-group">
+                            <label asp-for="fecha" class="form-label"></label>
+                            <input asp-for="fecha" class="form-control" readonly />
+                        <span asp-validation-for="fecha" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+                
+                
+            </form>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" style="background:#FF5B56;height: 400px;padding:5px">
+            <div style="background: black;padding: 10px">
+                <h3 style="color:white">Resumen </h3>
+                <hr>
+                <table class="table">
+                    <tr>
+                        <th><h6>cantidad Articulos:</h6></th>
+
+                        <th><h5> @ViewBag.can </h5></th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>IGV :</h6>
+                        </th>
+                        <td style="color:white">
+                            S/. 0.0
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h6>Sub total :</h6>
+                        </th>
+                        <td style="color:white">
+                            S/. @ViewBag.pre
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><h4>Total</h4></th>
+                        <th>
+                            <h5>
+                                S/. @ViewBag.pre
+
+                            </h5>
+                        </th>
+                    </tr>
+
+                </table>
+                <br> <br>   
+                
+                 <form asp-action="Comprar">
+                    <input asp-for="apellido" type="hidden" class="form-control" readonly />
+                    <input asp-for="nombre" type="hidden" class="form-control" readonly />
+                    <input asp-for="dni" type="hidden" class="form-control" readonly />
+
+                        <input asp-for="codigo" type="hidden" class="form-control" readonly />
+                       
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            Procesar compra
+                        </button>
+                    </div>
+                </form>
+
+               
+            </div>
+        </div>
+
+
+        
+    </div>
+
+</div>
+
+
+
+
+<!--la vista parcial-->
+
+<div>
+    @Html.Partial("Resumen",ViewBag.deta as IEnumerable<ProyectoMVC2022.Models.Carro>)
+</div>
+
